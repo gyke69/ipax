@@ -131,8 +131,7 @@ def processIPA(ipaFullPath, defaultkey):
             result[baseFileName]["AppVersion"] = appVersion
             result[baseFileName]["AppBundleIdentifier"] = appBundleIdentifier
             result[baseFileName]["IconName"] = newImageFileName
-            result[appBundleIdentifier]["FileName"] = baseFileName
-            
+            result[baseFileName]["FileName"] = baseFileName
         elif (defaultkey == "bundleId"):
             result[appBundleIdentifier] = dict()
             result[appBundleIdentifier]["AppName"] = appName
